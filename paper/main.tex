@@ -1,0 +1,70 @@
+\documentclass[a4paper,11pt]{article}
+
+\usepackage{graphicx}
+% Set path for figure inputs
+\graphicspath{{../output/figures/}}
+% Set path for tables input
+\makeatletter
+\def\input@path{{../output/tables/}}
+\makeatother
+
+\usepackage{natbib}
+\usepackage{array}
+\usepackage{caption}
+\usepackage{graphicx}
+\usepackage{siunitx}
+\usepackage[normalem]{ulem}
+\usepackage{colortbl}
+\usepackage{multirow}
+\usepackage{hhline}
+\usepackage{calc}
+\usepackage{tabularx}
+\usepackage{threeparttable}
+\usepackage{wrapfig}
+\usepackage{adjustbox}
+
+
+\usepackage{geometry}
+\geometry{a4paper,left=2.5cm,right=2.5cm,top=2.5cm,bottom=2.5cm}
+
+\usepackage{hyperref}
+\hypersetup{
+	pdfauthor = {Dr. Ruben Dewitte},
+	pdftitle = {Introduction to Gravity in R},
+	pdfkeywords = {},
+	colorlinks=false
+}
+
+\title{Introduction to Gravity in R}
+\author{dr. Ruben Dewitte}
+\date{\today}
+
+
+
+\begin{document}
+	\maketitle
+	
+	
+
+\input{tab_traditional_gravity.tex}
+
+\input{tab_distance_gravity.tex}
+
+\input{tab_glob_gravity.tex}
+
+
+\begin{figure}[htbp]
+	\centering
+	\includegraphics[width=\textwidth]{fig_rta_evo.png}
+	\caption{Evolution of RTA impact on trade over time. \newline
+		\textbf{Source:} Author's calculations.}
+	\label{fig_foreign_born}
+\end{figure}
+
+
+%
+%\bibliographystyle{chicago}
+%\bibliography{../bibliography.bib}
+%
+%	
+\end{document}
