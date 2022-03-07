@@ -5,12 +5,12 @@ date: "`r Sys.Date()`"
 output:
   word_document:
     toc: yes
+  pdf_document: 
+    toc: yes
   html_document:
     number_sections: yes
     toc: yes
     toc_float: yes
-  pdf_document: 
-    toc: yes
   md_document:
     variant: gfm
 bibliography: bibliography.bib  
@@ -56,6 +56,9 @@ Once R is successfully set up on your system, you will need to install a number 
 renv::restore(confirm = FALSE)
 ```
 
+If the `renv` command fails, you can alternatively install the necessary packages manually by running the R script `./code/01_packagemanagement.R`.
+
+
 # Instructions to replicators
 
 All code files in this repository are referred to through the package here(). This package finds the root as the place where the '.Rproj' file is located. For this repository, the .Rproj file is located in the root folder, referred to as './'. 
@@ -77,7 +80,7 @@ A mapping of the Figures displayed in the paper to the respective programs can b
 
 ```{r,echo = FALSE}
 fig_descr = rbind.data.frame(
-              fig1 = c(NA,"./code/06_RTAs.R", "./output/figures/fig_rta_evo.png"," ")
+              fig1 = c(NA,"./code/07_RTAs.R", "./output/figures/fig_rta_evo.png"," ")
 )
 fig_descr[,1] = 1:nrow(fig_descr)
 colnames(fig_descr) = c("Nr.", "Program", "Output", "Note")
@@ -89,12 +92,12 @@ A mapping of the Tables displayed in the paper to the respective programs can be
 
 ```{r,echo = FALSE}
 tab_descr = rbind.data.frame(
-  tab1a = c(NA,"./code/04_TraditionalGravityEstimates.R", "./output/tables/tab_traditional_gravity.tex"," "),
-  tab1b = c(NA,"./code/04_TraditionalGravityEstimates.R", "./output/tables/tab_traditional_gravity.docx"," "),
-  tab2a = c(NA,"./code/05_DistancePuzzle.R", "./output/tables/tab_distance_gravity.tex"," "),
-  tab2b = c(NA,"./code/05_DistancePuzzle.R", "./output/tables/tab_distance_gravity.docx"," "),
-  tab3a = c(NA,"./code/06_RTAs.R", "./output/tables/tab_rta_gravity.tex"," "),
-  tab3b = c(NA,"./code/06_RTAs.R", "./output/tables/tab_rta_gravity.docx"," ")
+  tab1a = c(NA,"./code/05_TraditionalGravityEstimates.R", "./output/tables/tab_traditional_gravity.tex"," "),
+  tab1b = c(NA,"./code/05_TraditionalGravityEstimates.R", "./output/tables/tab_traditional_gravity.docx"," "),
+  tab2a = c(NA,"./code/06_DistancePuzzle.R", "./output/tables/tab_distance_gravity.tex"," "),
+  tab2b = c(NA,"./code/06_DistancePuzzle.R", "./output/tables/tab_distance_gravity.docx"," "),
+  tab3a = c(NA,"./code/07_RTAs.R", "./output/tables/tab_rta_gravity.tex"," "),
+  tab3b = c(NA,"./code/07_RTAs.R", "./output/tables/tab_rta_gravity.docx"," ")
 )
 tab_descr[,1] = 1:nrow(tab_descr)
 colnames(tab_descr) = c("Nr.", "Program", "Output", "Note")

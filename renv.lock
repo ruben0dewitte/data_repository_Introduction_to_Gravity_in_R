@@ -373,10 +373,10 @@
     },
     "fixest": {
       "Package": "fixest",
-      "Version": "0.10.2",
+      "Version": "0.10.3",
       "Source": "Repository",
       "Repository": "CRAN",
-      "Hash": "e19f673af90a88a4e8a100004735906a",
+      "Hash": "b0d528ba47556e40680d1f3d79e871d5",
       "Requirements": [
         "Rcpp",
         "dreamerr",
@@ -974,10 +974,10 @@
     },
     "renv": {
       "Package": "renv",
-      "Version": "0.15.2",
+      "Version": "0.15.4",
       "Source": "Repository",
       "Repository": "CRAN",
-      "Hash": "206c4ef8b7ad6fb1060d69aa7b9dfe69",
+      "Hash": "c1078316e1d4f70275fc1ea60c0bc431",
       "Requirements": []
     },
     "reprex": {

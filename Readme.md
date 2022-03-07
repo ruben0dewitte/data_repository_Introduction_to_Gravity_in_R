@@ -41,6 +41,10 @@ and run the following commands:
 renv::restore(confirm = FALSE)
 ```
 
+If the `renv` command fails, you can alternatively install the necessary
+packages manually by running the R script
+`./code/01_packagemanagement.R`.
+
 # Instructions to replicators
 
 All code files in this repository are referred to through the package
@@ -79,19 +83,19 @@ programs can be found below:
 
 | Nr. | Program          | Output                           | Note |
 |----:|:-----------------|:---------------------------------|:-----|
-|   1 | ./code/06_RTAs.R | ./output/figures/fig_rta_evo.png |      |
+|   1 | ./code/07_RTAs.R | ./output/figures/fig_rta_evo.png |      |
 
 A mapping of the Tables displayed in the paper to the respective
 programs can be found below:
 
 | Nr. | Program                                 | Output                                       | Note |
 |----:|:----------------------------------------|:---------------------------------------------|:-----|
-|   1 | ./code/04_TraditionalGravityEstimates.R | ./output/tables/tab_traditional_gravity.tex  |      |
-|   2 | ./code/04_TraditionalGravityEstimates.R | ./output/tables/tab_traditional_gravity.docx |      |
-|   3 | ./code/05_DistancePuzzle.R              | ./output/tables/tab_distance_gravity.tex     |      |
-|   4 | ./code/05_DistancePuzzle.R              | ./output/tables/tab_distance_gravity.docx    |      |
-|   5 | ./code/06_RTAs.R                        | ./output/tables/tab_rta_gravity.tex          |      |
-|   6 | ./code/06_RTAs.R                        | ./output/tables/tab_rta_gravity.docx         |      |
+|   1 | ./code/05_TraditionalGravityEstimates.R | ./output/tables/tab_traditional_gravity.tex  |      |
+|   2 | ./code/05_TraditionalGravityEstimates.R | ./output/tables/tab_traditional_gravity.docx |      |
+|   3 | ./code/06_DistancePuzzle.R              | ./output/tables/tab_distance_gravity.tex     |      |
+|   4 | ./code/06_DistancePuzzle.R              | ./output/tables/tab_distance_gravity.docx    |      |
+|   5 | ./code/07_RTAs.R                        | ./output/tables/tab_rta_gravity.tex          |      |
+|   6 | ./code/07_RTAs.R                        | ./output/tables/tab_rta_gravity.docx         |      |
 
 # References
 

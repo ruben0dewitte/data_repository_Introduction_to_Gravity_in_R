@@ -84,7 +84,7 @@ summary(fit_fixedeffects)
 # 4. Fit gravity with PPML and fixed effects -----------------------------
 fit_poisson = fepois(trade ~ ln_dist + cntg + lang + clny |
                        fe_exp_year + fe_imp_year,
-                     data = x_app1 %>% filter(trade > 0 & exporter != importer),
+                     data = x_app1 %>% filter(exporter != importer),
                      vcov = cluster ~ pair_id)
 summary(fit_poisson)
 
