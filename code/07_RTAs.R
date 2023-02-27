@@ -12,7 +12,7 @@ library(flextable) # Output tables to word
 library(huxtable) # Outupt tables
 
 ## Source user-written functions
-source(here("code","02_toolbox.R")) 
+source(here("code","03_toolbox.R"))
 
 ## Load global variables
 load(here("output","globalvariables.Rdata"))
